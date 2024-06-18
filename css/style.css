@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.container{
+    width: 15rem;
+    height: 2.5rem;
+    position: relative;
+}
+.container input{
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-indent: 1rem;
+}
+.container .eye-container{
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
+.container .eye-container i.fa-eye-slash{
+    display: none;
+}
+.container .eye-container.active i.fa-eye-slash{
+    display: inline;
+}
+.container .eye-container.active i.fa-eye{
+    display: none;
+}
